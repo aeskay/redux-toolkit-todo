@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import todoReducer from '../features/counter/todoSlice';
+import {createLogger} from 'redux-logger'
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    todos: todoReducer,
   },
 });
